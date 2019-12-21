@@ -14,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResetPasswordActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".LaveSpaActivity"></activity>
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".exceutiveLaungue"
             android:screenOrientation="portrait" />

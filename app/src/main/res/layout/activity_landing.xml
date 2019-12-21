@@ -1,102 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Landing_Activity"
-    android:background="@drawable/hotel">
+    android:id="@+id/LandingDrawerID"
+    tools:context=".Landing_Activity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
-    <RelativeLayout
-        android:id="@+id/fuckingwork"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp">
 
-
-        <Button
-            android:id="@+id/JoinButtonID"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/join_design"
-            android:text="Join"
-            android:textColor="@android:color/white">
-
-        </Button>
-
-
-        <Button
-            android:id="@+id/SiginButtonID"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/JoinButtonID"
-            android:background="@drawable/sigin_design"
-            android:text="Sigin"
-            android:textColor="@android:color/white">
-
-        </Button>
-
-
-        <TextView
-            android:id="@+id/PostButtonID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            android:text="my Offer"
-            android:textAllCaps="true"
-            android:textColor="@android:color/white"
-            android:textSize="17sp"
-            android:textStyle="bold" />
-
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@+id/fuckingwork"
+    <ImageView
+        android:id="@+id/LaveSpaID"
+        android:layout_above="@+id/Twos"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/lavespaicon">
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/NavImageID"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/menumenu">
+
+    </ImageView>
+
+
+    <Button
+        android:id="@+id/JoinButtonID"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="15dp">
+        android:layout_marginRight="10dp"
+        android:background="@drawable/join_design"
+        android:text="Join"
+        android:textColor="@android:color/black">
 
-        <ImageView
-            android:id="@+id/SearchICon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="40dp"
-            android:src="@drawable/searchupdate">
-
-        </ImageView>
+    </Button>
 
 
-        <TextView
-            android:id="@+id/HotelWebID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@+id/SearchICon"
-            android:text="Search for hotel"
-            android:textColor="@android:color/white"
-            android:textSize="23dp"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/SiginButtonID"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JoinButtonID"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/sigin_design"
+        android:text="Sigin"
+        android:textColor="@android:color/white"></Button>
 
-    </RelativeLayout>
 
     <RelativeLayout
+
         android:id="@+id/KKK"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/ButtonID"
         android:layout_marginBottom="5dp">
 
 
@@ -106,38 +79,61 @@
             android:layout_height="match_parent"
             android:weightSum="3">
 
-            <ImageView
-                android:id="@+id/HukalangID"
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:scaleType="fitXY"
-                android:src="@drawable/hukalang">
+                android:layout_margin="3dp"
+                android:elevation="5dp"
+                android:layout_height="match_parent">
 
-            </ImageView>
 
-            <ImageView
-                android:id="@+id/OliviaID"
+                <ImageView
+                    android:src="@drawable/hukalangupdate"
+                    android:id="@+id/HukalangID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
+                android:layout_margin="3dp"
+                android:elevation="5dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/OliviaID"
+                    android:src="@drawable/oliviaupdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
                 android:layout_weight="1"
-                android:scaleType="fitXY"
-                android:src="@drawable/olivia">
-
-            </ImageView>
-
-            <ImageView
-                android:id="@+id/TheOliID"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:scaleType="fitXY"
-                android:src="@drawable/oli">
+                android:layout_margin="3dp"
+                android:elevation="5dp"
+                android:layout_height="match_parent">
 
-            </ImageView>
+                <ImageView
+                    android:id="@+id/TheOliID"
+                    android:src="@drawable/oli"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>
@@ -146,10 +142,10 @@
 
 
     <RelativeLayout
+        android:layout_above="@+id/KKK"
         android:id="@+id/Twos"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_above="@+id/KKK"
         android:layout_marginBottom="10dp">
 
         <LinearLayout
@@ -158,40 +154,58 @@
             android:weightSum="3">
 
 
-            <ImageView
-                android:id="@+id/CornerCafeID"
+            <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:scaleType="fitXY"
-                android:src="@drawable/cornercafe">
+                android:layout_margin="3dp"
+                android:elevation="5dp"
+                android:layout_height="match_parent">
 
-            </ImageView>
+                <ImageView
+                    android:src="@drawable/fuck"
+                    android:id="@+id/CornerCafeID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
 
 
-            <ImageView
-                android:id="@+id/MangobarID"
+            <androidx.cardview.widget.CardView
+                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:scaleType="fitXY"
-                android:src="@drawable/mangobar">
+                android:layout_margin="3dp"
+                android:elevation="5dp"
+                android:layout_height="match_parent">
 
-            </ImageView>
+                <ImageView
+                    android:id="@+id/MangobarID"
+                    android:src="@drawable/mangobarupdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
 
 
-            <ImageView
-                android:id="@+id/SevenSessionID"
+            <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
+                android:layout_margin="3dp"
                 android:layout_weight="1"
-                android:scaleType="fitXY"
-                android:src="@drawable/sevensession">
+                android:elevation="5dp"
+                android:layout_height="match_parent">
 
-            </ImageView>
+                <ImageView
+                    android:id="@+id/SevenSessionID"
+                    android:src="@drawable/sevensessionupdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>
@@ -203,7 +217,7 @@
         android:id="@+id/ButtonID"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_above="@+id/Twos"
+        android:layout_alignParentBottom="true"
         android:layout_marginBottom="5dp">
 
         <LinearLayout
@@ -224,11 +238,11 @@
 
                     <ImageView
                         android:id="@+id/Wifi"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/wifi" />
+                        android:src="@drawable/wifiicon" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -237,9 +251,9 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="5dp"
                         android:text="Free Wifi"
-                        android:visibility="gone"
-                        android:textColor="@android:color/white"
-                        android:textSize="15sp" />
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        />
 
                 </RelativeLayout>
 
@@ -259,11 +273,11 @@
 
                     <ImageView
                         android:id="@+id/dWifi"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/sss" />
+                        android:src="@drawable/mettingevant" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -271,10 +285,10 @@
                         android:layout_below="@+id/dWifi"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="5dp"
-                        android:visibility="gone"
-                        android:text="Spa"
-                        android:textColor="@android:color/white"
-                        android:textSize="15sp" />
+                        android:text="MEETINGS"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        />
 
 
                 </RelativeLayout>
@@ -293,11 +307,11 @@
 
                     <ImageView
                         android:id="@+id/hWifi"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/swimming" />
+                        android:src="@drawable/swimming_pool" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -305,10 +319,10 @@
                         android:layout_below="@+id/hWifi"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="5dp"
-                        android:visibility="gone"
-                        android:text="Pool"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
+                        android:text="SWIMMING POOL"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:visibility="visible" />
                 </RelativeLayout>
 
 
@@ -325,11 +339,11 @@
 
                     <ImageView
                         android:id="@+id/aWifi"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="35dp"
                         android:layout_centerHorizontal="true"
+                        android:layout_height="35dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/exercise" />
+                        android:src="@drawable/exc" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -337,10 +351,10 @@
                         android:layout_below="@+id/aWifi"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="5dp"
-                        android:visibility="gone"
-                        android:text="Free Night"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp" />
+                        android:text="FITNESS CENTER"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
                 </RelativeLayout>
 
             </LinearLayout>
@@ -352,3 +366,15 @@
 
 
 </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/LandingNavagationID"
+        android:layout_width="wrap_content"
+        android:layout_gravity = "start"
+        app:menu="@menu/landing_menu"
+        app:headerLayout="@layout/landing_header_layout"
+        android:layout_height="match_parent">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
