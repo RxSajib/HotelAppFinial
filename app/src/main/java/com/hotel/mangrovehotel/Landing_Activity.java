@@ -9,12 +9,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,10 +45,32 @@ public class Landing_Activity extends AppCompatActivity {
 
     private RelativeLayout layoutone, layouttwo;
 
+    private Button booknowbutton;
+    private LinearLayout relativeLayoutmettings;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
+
+        booknowbutton = findViewById(R.id.BookNowButtonID);
+        booknowbutton.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(event.getAction() == MotionEvent.ACTION_UP){
+                    booknowbutton.setBackgroundResource(R.drawable.booknow_buttonup);
+                    Intent intent = new Intent(getApplicationContext(), BookNowLoginActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                }
+                else {
+                    booknowbutton.setBackgroundResource(R.drawable.book_buttondown);
+                }
+
+                return true;
+            }
+        });
 
         drawerLayout = findViewById(R.id.LandingDrawerID);
         navigationView = findViewById(R.id.LandingNavagationID);
@@ -57,20 +81,20 @@ public class Landing_Activity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.LHomeID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                 }
 
                 if (menuItem.getItemId() == R.id.LMangroveCashID) {
                     Toast.makeText(getApplicationContext(), "First complected login process", Toast.LENGTH_LONG).show();
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                 }
 
                 if (menuItem.getItemId() == R.id.LFeedbackID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Toast.makeText(getApplicationContext(), "First complected login process", Toast.LENGTH_LONG).show();
 
                 }
@@ -78,7 +102,7 @@ public class Landing_Activity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.LBestDealsID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Intent intent = new Intent(getApplicationContext(), BestDeals.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -87,7 +111,7 @@ public class Landing_Activity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.LHelpID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Intent intent = new Intent(getApplicationContext(), HelpLineActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -96,7 +120,7 @@ public class Landing_Activity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.LWhyMangroveID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Intent intent = new Intent(getApplicationContext(), TramsAncConditions.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -105,7 +129,7 @@ public class Landing_Activity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.LTramsConditionID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Intent intent = new Intent(getApplicationContext(), TConditionActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -115,7 +139,7 @@ public class Landing_Activity extends AppCompatActivity {
                     int counter = 0;
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Intent intent = new Intent(Intent.ACTION_SEND);
                     intent.setType("text/plain");
 
@@ -127,6 +151,32 @@ public class Landing_Activity extends AppCompatActivity {
                     //  intent.putExtra(Intent.EXTRA_SUBJECT, sharebody);
                     startActivity(Intent.createChooser(intent, "share with"));
                 }
+
+                if(menuItem.getItemId() == R.id.MettingsID){
+                    menuItem.setChecked(true);
+                    menuItem.setCheckable(true);
+                    Intent intent = new Intent(getApplicationContext(), MetingActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
+                }
+                if(menuItem.getItemId() == R.id.SWIMMINGPOOLID){
+                    menuItem.setCheckable(true);
+                    menuItem.setChecked(true);
+                    Intent intent = new Intent(getApplicationContext(), SwmmingPoolActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
+                }
+                if(menuItem.getItemId() == R.id.FITNESSCENTERID){
+                    menuItem.setChecked(true);
+                    menuItem.setCheckable(true);
+                    Intent intent = new Intent(getApplicationContext(), FitnessActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
+                }
+
 
                 return true;
             }
@@ -286,11 +336,15 @@ public class Landing_Activity extends AppCompatActivity {
             }
         });
 
+
+
+
+
     }
 
 
     private void startOpening_navagationmenu() {
 
-        drawerLayout.openDrawer(Gravity.START);
+        drawerLayout.openDrawer(Gravity.LEFT);
     }
 }

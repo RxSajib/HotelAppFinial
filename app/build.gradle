@@ -25,6 +25,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+
+}
+
+repositories {
+    maven {
+        url 'https://dl.bintray.com/spark/maven'
+    }
 }
 
 dependencies {
@@ -54,6 +62,9 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'com.firebaseui:firebase-ui-database:1.1.1'
     implementation 'com.squareup.okhttp:okhttp:2.4.0'
+
+    implementation 'me.spark:submitbutton:1.0.1'
+
 
 }
 apply plugin: 'com.google.gms.google-services'

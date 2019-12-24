@@ -11,6 +11,7 @@
         android:icon="@drawable/whymangrove"
         android:title="Why Mangrove"></item>
 
+
     <item
         android:id="@+id/LBestDealsID"
         android:icon="@drawable/deal"
@@ -42,7 +43,20 @@
         android:title="Help Line"></item>
 
 
+    <item
+        android:id="@+id/MettingsID"
+        android:icon="@drawable/mettingevant"
+        android:title="Event &amp; Matings"></item>
 
+    <item
+        android:id="@+id/SWIMMINGPOOLID"
+        android:icon="@drawable/swimming_pool"
+        android:title="Swimming Pool"></item>
+
+    <item
+        android:id="@+id/FITNESSCENTERID"
+        android:icon="@drawable/exc"
+        android:title="Fitness Center"></item>
 
 
 </menu>

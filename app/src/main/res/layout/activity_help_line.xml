@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HelpLineActivity"
-    android:background="@drawable/hotel">
+    tools:context=".HelpLineActivity">
 
 
     <androidx.appcompat.widget.Toolbar
@@ -22,11 +21,11 @@
 
             <TextView
                 android:id="@+id/ContactsUsButtonID"
-                android:textColor="@android:color/white"
-                android:textSize="18dp"
-                android:text="Contacts Us"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:text="Contacts Us"
+                android:textColor="@android:color/white"
+                android:textSize="18dp">
 
             </TextView>
 
@@ -44,7 +43,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="We'd love to Hear from You"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -201,7 +200,8 @@
                     android:layout_marginRight="10dp"
                     android:layout_toRightOf="@id/email"
                     android:text="reservation@mangrovehotel.ae"
-                    android:textColor="#FF9800"                    android:textSize="15dp" />
+                    android:textColor="#FF9800"
+                    android:textSize="15dp" />
 
             </RelativeLayout>
 
@@ -236,7 +236,6 @@
 
 
             <Button
-                android:visibility="gone"
                 android:id="@+id/HelpLineButtonID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -245,7 +244,8 @@
                 android:background="@color/colorPrimary"
                 android:text="HelpLine"
                 android:textColor="@android:color/white"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:visibility="gone" />
 
 
         </RelativeLayout>

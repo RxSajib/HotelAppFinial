@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="170dp">
+
+    <RelativeLayout
+        android:background="@drawable/services_stoke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:background="#FA8E8E"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="Our Services"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/Wifid"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="25dp"
+                        android:src="@drawable/mettingevant"
+                        android:layout_height="25dp">
+                    </ImageView>
+
+                    <TextView
+                        android:text="MEETINGS"
+                        android:typeface="monospace"
+                        android:textSize="13sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:layout_toRightOf="@id/Wifid"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+             <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <ImageView
+                         android:id="@+id/Wifid"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="5dp"
+                         android:layout_width="25dp"
+                         android:src="@drawable/swimming_pool"
+                         android:layout_height="25dp">
+                     </ImageView>
+
+                     <TextView
+                         android:text="SWIMMING POOL"
+                         android:typeface="monospace"
+                         android:textSize="13sp"
+                         android:layout_centerVertical="true"
+                         android:textColor="@android:color/black"
+                         android:layout_toRightOf="@id/Wifid"
+                         android:layout_marginLeft="10dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+
+                     </TextView>
+                 </RelativeLayout>
+
+
+            </LinearLayout>
+             <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <ImageView
+                         android:id="@+id/Wifid"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="5dp"
+                         android:layout_width="25dp"
+                         android:src="@drawable/exc"
+                         android:layout_height="25dp">
+                     </ImageView>
+
+                     <TextView
+                         android:text="FITNESS CENTER"
+                         android:typeface="monospace"
+                         android:textSize="13sp"
+                         android:layout_centerVertical="true"
+                         android:textColor="@android:color/black"
+                         android:layout_toRightOf="@id/Wifid"
+                         android:layout_marginLeft="10dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content">
+
+                     </TextView>
+                 </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

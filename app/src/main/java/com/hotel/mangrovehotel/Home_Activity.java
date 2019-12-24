@@ -157,6 +157,9 @@ public class Home_Activity extends AppCompatActivity {
                     finish();
                 }
 
+
+
+
                 return true;
             }
         });

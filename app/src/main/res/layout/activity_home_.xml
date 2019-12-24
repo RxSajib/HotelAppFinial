@@ -59,8 +59,6 @@
         android:layout_gravity="start"
         android:background="@drawable/nav_background"
         app:menu="@menu/hotel_menu">
-
-
     </com.google.android.material.navigation.NavigationView>
 
 
