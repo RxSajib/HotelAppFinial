@@ -21,6 +21,86 @@
         android:layout_height="match_parent">
 
 
+        <LinearLayout
+            android:id="@+id/OneI"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:src="@drawable/mettingsone"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:src="@drawable/mettingstwo"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <ImageView
+                    android:src="@drawable/mettingsthree"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_below="@+id/OneI"
+            android:id="@+id/MConrnercafeID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="MEETINGS AND EVENTS"
+            android:textColor="#FF5722"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/MConnertextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MConrnercafeID"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/mettings_text"
+            android:textSize="15dp" />
+
+
+
     </RelativeLayout>
 
 </RelativeLayout>

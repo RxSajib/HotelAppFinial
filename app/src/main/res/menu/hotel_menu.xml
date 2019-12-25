@@ -26,6 +26,25 @@
         android:icon="@drawable/dollar"
         android:title="Mangrove Rewards"></item>
 
+
+    <item
+        android:id="@+id/HomeMettingsID"
+        android:icon="@drawable/mettingevant"
+        android:title="Event &amp; Meetings"></item>
+
+    <item
+        android:id="@+id/HomeSWIMMINGPOOLID"
+        android:icon="@drawable/swimming_pool"
+        android:title="Swimming Pool"></item>
+
+    <item
+        android:id="@+id/HomeIDFITNESSCENTERID"
+        android:icon="@drawable/exc"
+        android:title="Fitness Center"></item>
+
+
+
+
     <item
         android:id="@+id/ReferFeiendID"
         android:icon="@drawable/friends"

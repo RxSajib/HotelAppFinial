@@ -6,10 +6,16 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
 public class SwmmingPoolActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private TextView textViewone;
+    private TextView textViewtwo;
+    private Animation animation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +28,12 @@ public class SwmmingPoolActivity extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
         getSupportActionBar().setTitle("Swimming Pool");
 
+
+        textViewone = findViewById(R.id.SConrnercafeID);
+        textViewtwo = findViewById(R.id.SConnertextID);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.frombutton);
+        textViewtwo.setAnimation(animation);
+        textViewone.setAnimation(animation);
     }
 
     @Override

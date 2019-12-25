@@ -6,10 +6,16 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
 public class MetingActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private TextView textViewone;
+    private TextView textViewtwo;
+    private Animation animation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +26,13 @@ public class MetingActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
-        getSupportActionBar().setTitle("Meting");
+        getSupportActionBar().setTitle("Mettings and events");
+
+        textViewone = findViewById(R.id.MConrnercafeID);
+        textViewtwo = findViewById(R.id.MConnertextID);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.frombutton);
+        textViewone.setAnimation(animation);
+        textViewtwo.setAnimation(animation);
     }
 
     @Override

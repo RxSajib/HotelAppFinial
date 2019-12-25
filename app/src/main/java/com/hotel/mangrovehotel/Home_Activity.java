@@ -145,7 +145,7 @@ public class Home_Activity extends AppCompatActivity {
                     startActivity(intent);
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                 }
 
 
@@ -158,6 +158,31 @@ public class Home_Activity extends AppCompatActivity {
                 }
 
 
+                if(menuItem.getItemId() == R.id.HomeMettingsID){
+                    menuItem.setCheckable(true);
+                    menuItem.setChecked(true);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
+                    Intent intent = new Intent(getApplicationContext(), MetingActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                }
+
+                if(menuItem.getItemId() == R.id.HomeSWIMMINGPOOLID){
+                    menuItem.setCheckable(true);
+                    menuItem.setChecked(true);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
+                    Intent intent = new Intent(getApplicationContext(), SwmmingPoolActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                }
+                if(menuItem.getItemId() == R.id.HomeIDFITNESSCENTERID){
+                    menuItem.setCheckable(true);
+                    menuItem.setChecked(true);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
+                    Intent intent = new Intent(getApplicationContext(), FitnessActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                }
 
 
                 return true;

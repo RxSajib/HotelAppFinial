@@ -46,7 +46,7 @@
     <item
         android:id="@+id/MettingsID"
         android:icon="@drawable/mettingevant"
-        android:title="Event &amp; Matings"></item>
+        android:title="Event &amp; Meetings"></item>
 
     <item
         android:id="@+id/SWIMMINGPOOLID"

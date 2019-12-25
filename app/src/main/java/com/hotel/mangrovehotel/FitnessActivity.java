@@ -6,10 +6,16 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
 public class FitnessActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private TextView textViewone;
+    private  TextView textViewtwo;
+    private Animation animation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +26,14 @@ public class FitnessActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
-        getSupportActionBar().setTitle("FITNESS CENTER");
+        getSupportActionBar().setTitle("Fitness Center");
+
+
+        textViewone = findViewById(R.id.ConrnercafeID);
+        textViewtwo = findViewById(R.id.ConnertextID);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.frombutton);
+        textViewtwo.setAnimation(animation);
+        textViewone.setAnimation(animation);
     }
 
     @Override

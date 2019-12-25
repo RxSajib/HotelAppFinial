@@ -143,8 +143,9 @@
                     android:layout_marginRight="10dp"
                     android:layout_toRightOf="@id/Location"
                     android:text="Al Khor Road, Near Corniche Hall,Ras Al Khaimah – UAE"
-                    android:textColor="#FF9800"
-                    android:textSize="15dp" />
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="17dp" />
 
             </RelativeLayout>
 
@@ -172,8 +173,9 @@
                     android:layout_marginRight="10dp"
                     android:layout_toRightOf="@id/phone"
                     android:text="+971 7 205 0505"
-                    android:textColor="#FF9800"
-                    android:textSize="15dp" />
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="17dp" />
 
             </RelativeLayout>
 
@@ -200,8 +202,9 @@
                     android:layout_marginRight="10dp"
                     android:layout_toRightOf="@id/email"
                     android:text="reservation@mangrovehotel.ae"
-                    android:textColor="#FF9800"
-                    android:textSize="15dp" />
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="17dp" />
 
             </RelativeLayout>
 
@@ -229,8 +232,9 @@
                     android:layout_marginRight="10dp"
                     android:layout_toRightOf="@id/emailtwo"
                     android:text="contactus@mangrovehotel.ae"
-                    android:textColor="#FF9800"
-                    android:textSize="15dp" />
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
 
             </RelativeLayout>
 
