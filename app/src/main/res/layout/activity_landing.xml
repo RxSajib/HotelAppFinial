@@ -7,6 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".Landing_Activity">
 
+
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,6 +20,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_above="@+id/Twos"
+            android:elevation="6dp"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
             android:src="@drawable/lavespaicon">
@@ -44,8 +48,7 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/join_design"
             android:text="Join"
-            android:textColor="@android:color/black">
-        </Button>
+            android:textColor="@android:color/black"></Button>
 
 
         <Button
@@ -60,6 +63,19 @@
             android:background="@drawable/sigin_design"
             android:text="Sigin"
             android:textColor="@android:color/white"></Button>
+
+
+
+        <ImageView
+            android:layout_below="@+id/SiginButtonID"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:layout_above="@+id/Twos"
+            android:src="@drawable/landing_sccreen"
+            android:layout_height="wrap_content">
+
+        </ImageView>
 
 
         <Button
@@ -96,10 +112,10 @@
 
 
                     <ImageView
-                        android:elevation="5dp"
                         android:id="@+id/HukalangID"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:elevation="5dp"
                         android:src="@drawable/hukalangupdate">
 
                     </ImageView>
@@ -111,14 +127,14 @@
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_margin="15dp"
+                    android:layout_weight="1.3">
 
                     <ImageView
-                        android:elevation="5dp"
                         android:id="@+id/OliviaID"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:elevation="10dp"
                         android:src="@drawable/oliviaupdate">
 
                     </ImageView>
@@ -129,14 +145,15 @@
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.8">
 
                     <ImageView
-                        android:elevation="5dp"
                         android:id="@+id/TheOliID"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:elevation="5dp"
                         android:src="@drawable/oli">
 
                     </ImageView>
@@ -168,10 +185,10 @@
                     android:layout_weight="1">
 
                     <ImageView
-                        android:elevation="5dp"
                         android:id="@+id/CornerCafeID"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:elevation="5dp"
                         android:src="@drawable/fuck">
 
                     </ImageView>
@@ -183,13 +200,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:layout_weight="1">
+                    android:layout_weight="1.2">
 
                     <ImageView
-                        android:elevation="5dp"
                         android:id="@+id/MangobarID"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:elevation="5dp"
                         android:src="@drawable/mangobarupdate">
 
                     </ImageView>
@@ -200,14 +217,15 @@
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1">
 
                     <ImageView
-                        android:elevation="5dp"
                         android:id="@+id/SevenSessionID"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:elevation="5dp"
                         android:src="@drawable/sevensessionupdate">
 
                     </ImageView>
@@ -379,11 +397,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/landing_header_layout"
-        app:menu="@menu/landing_menu">
-
-
-
-
-    </com.google.android.material.navigation.NavigationView>
+        app:menu="@menu/landing_menu"></com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>
