@@ -26,18 +26,17 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginLeft="10dp"
-                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
                 android:src="@drawable/list_menu">
 
             </ImageView>
 
             <Button
                 android:id="@+id/BookNowButtonID"
-                android:layout_width="150dp"
+                android:layout_width="120dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="0dp"
-                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="120dp"
                 android:background="@drawable/booknow_buttonup"
                 android:text="Book Now"
                 android:textColor="@android:color/white"
@@ -157,6 +156,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:elevation="6dp"
+                        android:layout_centerVertical="true"
                         android:layout_centerHorizontal="true"
                         android:layout_marginBottom="10dp"
                         android:src="@drawable/lavespaicon">
