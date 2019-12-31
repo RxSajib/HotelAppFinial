@@ -27,7 +27,7 @@ public class WelcomeActivity extends AppCompatActivity {
             public void run() {
 
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(0);
                     Intent intent = new Intent(getApplicationContext(), Landing_Activity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
