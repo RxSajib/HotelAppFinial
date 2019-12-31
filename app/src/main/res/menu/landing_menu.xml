@@ -57,6 +57,11 @@
         android:id="@+id/FITNESSCENTERID"
         android:icon="@drawable/exc"
         android:title="Fitness Center"></item>
+    <item
+        android:id="@+id/ExctileID"
+        android:icon="@drawable/oli"
+        android:title="The Executive lounge"
+        ></item>
 
 
 </menu>

@@ -177,6 +177,15 @@ public class Landing_Activity extends AppCompatActivity {
                     drawerLayout.closeDrawer(Gravity.LEFT);
                 }
 
+                if(menuItem.getItemId() == R.id.ExctileID){
+                    Intent intent = new Intent(getApplicationContext(), exceutiveLaungue.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
+                    menuItem.setChecked(true);
+                    menuItem.setCheckable(true);
+                }
+
 
                 return true;
             }
@@ -275,7 +284,7 @@ public class Landing_Activity extends AppCompatActivity {
         });
 
 
-        theoli = findViewById(R.id.TheOliID);
+       /* theoli = findViewById(R.id.TheOliID);
         theoli.setAnimation(animation);
 
         theoli.setOnClickListener(new View.OnClickListener() {
@@ -285,7 +294,7 @@ public class Landing_Activity extends AppCompatActivity {
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
             }
-        });
+        });*/
 
         Mauth = FirebaseAuth.getInstance();
      /*

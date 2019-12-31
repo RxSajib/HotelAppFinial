@@ -184,6 +184,16 @@ public class Home_Activity extends AppCompatActivity {
                     startActivity(intent);
                 }
 
+                if(menuItem.getItemId() == R.id.RExctileID){
+                    menuItem.setCheckable(true);
+                    menuItem.setChecked(true);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
+
+                    Intent intent = new Intent(getApplicationContext(), exceutiveLaungue.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                }
+
 
                 return true;
             }

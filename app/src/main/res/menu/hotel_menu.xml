@@ -38,6 +38,12 @@
         android:title="Swimming Pool"></item>
 
     <item
+        android:id="@+id/RExctileID"
+        android:icon="@drawable/oli"
+        android:title="The Executive lounge"
+        ></item>
+
+    <item
         android:id="@+id/HomeIDFITNESSCENTERID"
         android:icon="@drawable/exc"
         android:title="Fitness Center"></item>

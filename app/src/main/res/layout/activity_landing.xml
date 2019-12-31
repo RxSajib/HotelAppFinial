@@ -15,79 +15,82 @@
         android:layout_height="match_parent">
 
 
+
+        <RelativeLayout
+            android:id="@+id/sss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/NavImageID"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/list_menu">
+
+            </ImageView>
+
+            <Button
+                android:id="@+id/BookNowButtonID"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="0dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/booknow_buttonup"
+                android:text="Book Now"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"></Button>
+
+
+            <Button
+                android:id="@+id/JoinButtonID"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/join_design"
+                android:text="Join"
+                android:textColor="@android:color/black"></Button>
+
+
+            <Button
+                android:id="@+id/SiginButtonID"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/JoinButtonID"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/sigin_design"
+                android:text="Sigin"
+                android:textColor="@android:color/white"></Button>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
         <ImageView
-            android:id="@+id/LaveSpaID"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_above="@+id/Twos"
-            android:elevation="6dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/lavespaicon">
-
-        </ImageView>
-
-
-        <ImageView
-            android:id="@+id/NavImageID"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:src="@drawable/list_menu">
-
-        </ImageView>
-
-
-        <Button
-            android:id="@+id/JoinButtonID"
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/join_design"
-            android:text="Join"
-            android:textColor="@android:color/black"></Button>
-
-
-        <Button
-            android:id="@+id/SiginButtonID"
-            android:layout_width="70dp"
-            android:layout_height="30dp"
-            android:layout_below="@+id/JoinButtonID"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/sigin_design"
-            android:text="Sigin"
-            android:textColor="@android:color/white"></Button>
-
-
-
-        <ImageView
-            android:layout_below="@+id/SiginButtonID"
+            android:layout_below="@+id/sss"
             android:layout_width="match_parent"
             android:layout_marginTop="20dp"
             android:scaleType="centerCrop"
             android:layout_above="@+id/Twos"
-            android:src="@drawable/landing_sccreen"
+            android:src="@drawable/finialmage"
             android:layout_height="wrap_content">
 
         </ImageView>
 
 
-        <Button
-            android:id="@+id/BookNowButtonID"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="0dp"
-            android:background="@drawable/booknow_buttonup"
-            android:text="Book Now"
-            android:textColor="@android:color/white"
-            android:textSize="17dp"></Button>
 
         <RelativeLayout
             android:id="@+id/KKK"
@@ -150,11 +153,13 @@
                     android:layout_weight="0.8">
 
                     <ImageView
-                        android:id="@+id/TheOliID"
+                        android:id="@+id/LaveSpaID"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:elevation="5dp"
-                        android:src="@drawable/oli">
+                        android:elevation="6dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/lavespaicon">
 
                     </ImageView>
 
