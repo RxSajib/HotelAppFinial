@@ -39,7 +39,7 @@
 
     <item
         android:id="@+id/RExctileID"
-        android:icon="@drawable/oli"
+        android:icon="@drawable/excutive_icon"
         android:title="The Executive lounge"
         ></item>
 
