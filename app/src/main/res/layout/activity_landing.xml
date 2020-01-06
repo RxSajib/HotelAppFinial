@@ -96,7 +96,7 @@
                 <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.2"
+                    android:layout_weight="1"
                     android:gravity="center">
 
                     <ImageView
@@ -115,15 +115,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
-                    android:layout_weight="0.8"
+                    android:layout_weight="1"
                     android:gravity="center">
 
                     <ImageView
                         android:id="@+id/LaveSpaID"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
                         android:elevation="6dp"
                         android:src="@drawable/lavespaicon">
 
@@ -194,8 +192,8 @@
                     <ImageView
                         android:id="@+id/SevenSessionID"
                         android:layout_width="80dp"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/seassion"></ImageView>
+                        android:layout_height="80dp"
+                        android:src="@drawable/g"></ImageView>
 
                 </RelativeLayout>
 
@@ -359,7 +357,7 @@
             android:id="@+id/BookNowButtonID"
             android:layout_width="120dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="131dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="17dp"
             android:background="@drawable/booknow_buttonup"
             android:text="Book Now"
