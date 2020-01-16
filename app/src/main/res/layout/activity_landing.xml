@@ -5,8 +5,8 @@
     android:id="@+id/LandingDrawerID"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Landing_Activity"
-    android:background="@drawable/landing_background">
+    android:background="@drawable/backchanges"
+    tools:context=".Landing_Activity">
 
 
     <RelativeLayout
@@ -20,6 +20,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp">
 
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="37dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/SiginButtonID"
+                android:src="@drawable/discountgif">
+
+            </pl.droidsonroids.gif.GifImageView>
+
             <ImageView
                 android:id="@+id/NavImageID"
                 android:layout_width="25dp"
@@ -27,7 +38,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp"
                 android:src="@drawable/list_menu">
-
             </ImageView>
 
 
@@ -40,7 +50,8 @@
                 android:layout_marginRight="12dp"
                 android:background="@drawable/join_design"
                 android:text="Join"
-                android:textColor="@android:color/black"></Button>
+                android:textColor="@android:color/black">
+            </Button>
 
             <Button
                 android:id="@+id/SiginButtonID"
@@ -52,7 +63,8 @@
                 android:layout_marginRight="10dp"
                 android:background="@drawable/sigin_design"
                 android:text="Sigin"
-                android:textColor="@android:color/white"></Button>
+                android:textColor="@android:color/white">
+            </Button>
 
 
         </RelativeLayout>
@@ -60,69 +72,99 @@
 
         <RelativeLayout
             android:id="@+id/KKK"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="5dp">
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp">
 
 
-            <LinearLayout
-                android:id="@+id/LayoutOne"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:weightSum="3">
+            <RelativeLayout
+                android:id="@+id/hukalangID"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/oval_three">
 
 
                 <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
 
-                    <ImageView
-                        android:id="@+id/HukalangID"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:elevation="5dp"
-                        android:src="@drawable/hukalangupdate">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                    </ImageView>
+                        <ImageView
+                            android:id="@+id/HukalangID"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:outlineSpotShadowColor="#EBEBEB"
+                            android:src="@drawable/hukalangupdate">
+                        </ImageView>
+
+
+                    </RelativeLayout>
 
 
                 </RelativeLayout>
 
 
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/Cli"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/hukalangID"
+                android:background="@drawable/oval_four">
+
+
                 <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                     <ImageView
                         android:id="@+id/OliviaID"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:elevation="10dp"
-                        android:src="@drawable/oliviaupdate">
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:outlineSpotShadowColor="#EBEBEB"
+                        android:src="@drawable/oliviashaddow">
 
                     </ImageView>
-
                 </RelativeLayout>
 
 
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/d"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/Cli"
+                android:background="@drawable/lspa_stoke">
+
+
                 <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="1"
-                    android:gravity="center">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
 
                     <ImageView
-                        android:id="@+id/LaveSpaID"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:elevation="6dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:outlineSpotShadowColor="#EBEBEB"
                         android:src="@drawable/lavespaicon">
 
                     </ImageView>
@@ -130,7 +172,70 @@
                 </RelativeLayout>
 
 
-            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:textColor="#1861E6">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:text="MANGROVE"
+                            android:textColor="#1861E6"></TextView>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#633838">
+
+                        </View>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:text="LA VIE\nSPA"
+                            android:textColor="#18CEE6">
+
+                        </TextView>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
@@ -139,66 +244,113 @@
             android:id="@+id/Twos"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_above="@+id/KKK">
+            android:layout_above="@+id/KKK"
+            android:layout_marginBottom="10dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:weightSum="3">
-
+                android:layout_centerHorizontal="true">
 
                 <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
+                    android:id="@+id/cornerCafeID"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/circle_one">
 
-                    <ImageView
-                        android:id="@+id/CornerCafeID"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:elevation="5dp"
-                        android:src="@drawable/fuck">
 
-                    </ImageView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/CornerCafeID"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:outlineSpotShadowColor="#EBEBEB"
+                            android:src="@drawable/fuck">
+
+                        </ImageView>
+                    </RelativeLayout>
+
 
                 </RelativeLayout>
 
 
                 <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
+                    android:id="@+id/mangobarID"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/cornerCafeID"
+                    android:background="@drawable/oval_two">
 
-                    <ImageView
-                        android:id="@+id/MangobarID"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:elevation="5dp"
-                        android:src="@drawable/mangobarupdate">
 
-                    </ImageView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/MangobarID"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:outlineSpotShadowColor="#EBEBEB"
+                            android:src="@drawable/mangobarshaddow">
+
+                        </ImageView>
+                    </RelativeLayout>
+
 
                 </RelativeLayout>
 
 
                 <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center">
+                    android:id="@+id/ServenSasion"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/mangobarID">
 
-                    <ImageView
-                        android:id="@+id/SevenSessionID"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/g"></ImageView>
+                    <RelativeLayout
+                        android:id="@+id/SevenSeID"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/seseassion">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:outlineSpotShadowColor="#EBEBEB"
+                                android:text="7 SEASONS\nResturent"
+                                android:textColor="#1861E6"
+                                android:textSize="14dp">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
 
                 </RelativeLayout>
 
 
-            </LinearLayout>
+            </RelativeLayout>
+
 
         </RelativeLayout>
 
@@ -362,7 +514,10 @@
             android:background="@drawable/booknow_buttonup"
             android:text="Book Now"
             android:textColor="@android:color/white"
-            android:textSize="14dp"></Button>
+            android:textSize="14dp">
+        </Button>
+
+
     </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -371,6 +526,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/landing_header_layout"
-        app:menu="@menu/landing_menu"></com.google.android.material.navigation.NavigationView>
+        app:menu="@menu/landing_menu">
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

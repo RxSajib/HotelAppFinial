@@ -74,13 +74,13 @@ public class Home_Activity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.HomeID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                 }
 
                 if (menuItem.getItemId() == R.id.BestDealsID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Intent intent = new Intent(getApplicationContext(), BestDeals.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -89,7 +89,7 @@ public class Home_Activity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.HelpID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Intent intent = new Intent(getApplicationContext(), HelpLineActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -98,7 +98,7 @@ public class Home_Activity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.WhyMangroveID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Intent intent = new Intent(getApplicationContext(), TramsAncConditions.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -107,7 +107,7 @@ public class Home_Activity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.FeedbackID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Intent intent = new Intent(getApplicationContext(), Feedback_Activity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -116,7 +116,7 @@ public class Home_Activity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.TramsConditionID) {
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Intent intent = new Intent(getApplicationContext(), TConditionActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
@@ -126,7 +126,7 @@ public class Home_Activity extends AppCompatActivity {
                     int counter = 0;
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.START);
+                    drawerLayout.closeDrawer(Gravity.LEFT);
                     Intent intent = new Intent(Intent.ACTION_SEND);
                     intent.setType("text/plain");
 
@@ -228,7 +228,7 @@ public class Home_Activity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         if (item.getItemId() == android.R.id.home) {
-            drawerLayout.openDrawer(Gravity.START);
+            drawerLayout.openDrawer(Gravity.LEFT);
         }
 
 

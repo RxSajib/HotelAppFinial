@@ -23,6 +23,7 @@ import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Landing_Activity extends AppCompatActivity {
 
@@ -35,11 +36,12 @@ public class Landing_Activity extends AppCompatActivity {
     private TextView offer;
     private FirebaseAuth Mauth;
 
-    private ImageView cornercafe, mangobar, sevensession, hukalang, olivia, theoli;
-
+    private ImageView cornercafe, mangobar, hukalang, olivia, theoli;
+    private RelativeLayout sevensession;
     private ImageView navimage;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
+    private RelativeLayout seven;
 
     private ImageView lavespa;
 
@@ -192,8 +194,8 @@ public class Landing_Activity extends AppCompatActivity {
         });
 
 
-        lavespa = findViewById(R.id.LaveSpaID);
-        lavespa.setOnClickListener(new View.OnClickListener() {
+        seven = findViewById(R.id.d);
+        seven.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), LaveSpaActivity.class);
@@ -250,7 +252,7 @@ public class Landing_Activity extends AppCompatActivity {
         });
 
 
-        sevensession = findViewById(R.id.SevenSessionID);
+        sevensession = findViewById(R.id.SevenSeID);
         sevensession.setAnimation(animation);
         sevensession.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -355,5 +357,19 @@ public class Landing_Activity extends AppCompatActivity {
     private void startOpening_navagationmenu() {
 
         drawerLayout.openDrawer(Gravity.LEFT);
+    }
+
+    @Override
+    protected void onStart() {
+
+        FirebaseUser Muser = Mauth.getCurrentUser();
+        if(Muser != null){
+            Intent intent = new Intent(getApplicationContext(), Home_Activity.class) ;
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            finish();
+            }
+
+        super.onStart();
     }
 }
