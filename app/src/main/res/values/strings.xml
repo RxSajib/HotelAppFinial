@@ -44,7 +44,12 @@ gatherings and dining. Guests can also enjoy 24 hour In-Room Dining.</string>
 A Variety of Mediterranean cuisine awaits you at the Olivia Restaurant. Whether you
 are engaging in casual business or romantic dining, Olivia captivates food lovers with its
 sweeping view of the mangrove. The selection of specialties spanning a wide variety of
-cultures with distinct cuisine and ensure a delightful dining experience.</string>
+cultures with distinct cuisine and ensure a delightful dining experience.\n\n
+
+        Breakfast: 07AM-10:30AM\n
+        Lunch: 01PM-3PM\n
+        Dinner: 07PM-3PM\n
+    </string>
 
 
     <string name="seven_session">(Dinner)\n
@@ -55,17 +60,19 @@ Seasons offers diners countless reasons to enjoy genuine food delicacies.</strin
 
     <string name="Mango">Mango Lounge offers an ambience for relaxation and socializing, with live
 entertainment, signature drinks and unbeatable bar fare. It is the perfect place to be in
-the evening.</string>
+the evening.\n\n
+    Open daily from: 8AM-2PM\n</string>
 
 
     <string name="Hookantext">(Poolside)\n
 Every day feels like a holiday at The Hookah Lounge. Enjoy a snack, an ice-cold
 smoothie of your choice of refreshing beverage or shisha by the pool in the tropical
-afternoon air as you relax and unwind.</string>
+afternoon air as you relax and unwind.\n\n
+    Open daily from: 8AM - 2PM\n</string>
 
     <string name="spatext">
-        Hi La Vie SPA!
-Relax your Body by beautiful Massage ladies!\n\n
+        Hi La Vie SPA!\n
+        Mangrove La Vie SPA strive to ensure we cultivate an atmosphere of comfort, and relaxation set apart from the outside world. Providing the best customer service possible is our primary goal, our customers leave feeling satisfied and fulfilled.\n\n
 
 1st Floor Mangrove Hotel\n
 Ras Al khaimah\n
@@ -86,7 +93,8 @@ Tel: 07-2050500\n
 right on lobby level, it’s the perfect spot for a healthy breakfast, snack or any-time-ofthe-day meal. No shortcuts here! Our baked goods are proudly and meticulously made
 with real home-inspired ingredients: real butter, fresh cream, luscious fruit, and fine
 chocolate and nuts. Our meal offerings are based on delicious, tried and true recipes
-that will have you coming back for more.</string>
+that will have you coming back for more.\n\n
+    Open daily from: 8AM-2AM\n</string>
 
     <string name="Services">Mangrove Hotel offers a wide range of guest facilities and services. Facilities include a
 wellness center, swimming pool, GYM, business center, meetings rooms alongside

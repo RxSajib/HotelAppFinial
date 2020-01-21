@@ -24,60 +24,50 @@
         android:layout_height="match_parent">
 
 
-
-        <LinearLayout
-            android:id="@+id/OneITd"
-            android:orientation="vertical"
-            android:weightSum="2"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_weight="1"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
-
-                <ImageView
-                    android:src="@drawable/hukaone"
-                    android:scaleType="centerCrop"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </ImageView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:weightSum="2"
-                android:layout_width="match_parent"
-                android:layout_marginTop="5dp"
-                android:layout_height="0dp">
-
-                <ImageView
-                    android:src="@drawable/hukatwo"
-                    android:layout_weight="1"
-                    android:scaleType="centerCrop"
-                    android:layout_marginRight="2dp"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"/>
-
-                <ImageView
-                    android:src="@drawable/hukathree"
-                    android:layout_weight="1"
-                    android:scaleType="centerCrop"
-                    android:layout_marginLeft="2dp"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"/>
+                android:layout_height="wrap_content">
 
 
-            </LinearLayout>
 
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/one"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hukaone"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/twos"
+            android:layout_below="@+id/one"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/hukatwo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ythree"
+            android:layout_below="@+id/twos"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hukathree"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        </ImageView>
 
 
         <TextView
-            android:layout_below="@+id/OneITd"
+            android:layout_below="@+id/ythree"
             android:id="@+id/HookanID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,6 +89,11 @@
             android:text="@string/Hookantext"
             android:textSize="15dp" />
 
+
+
+            </RelativeLayout>
+
+        </ScrollView>
 
     </RelativeLayout>
 

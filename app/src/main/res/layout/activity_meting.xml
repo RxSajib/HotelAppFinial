@@ -21,63 +21,54 @@
         android:layout_height="match_parent">
 
 
-        <LinearLayout
-            android:id="@+id/OneI"
-            android:orientation="vertical"
-            android:weightSum="2"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_weight="1"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/mettingsone"
-                    android:scaleType="centerCrop"
+                    android:id="@+id/picone"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sssss"
+                    android:layout_height="150dp">
 
                 </ImageView>
 
-            </LinearLayout>
+                <ImageView
+                    android:id="@+id/ptwo"
+                    android:layout_below="@+id/picone"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mettingicon"
+                    android:layout_height="150dp">
+                </ImageView>
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:weightSum="2"
-                android:layout_width="match_parent"
-                android:layout_marginTop="5dp"
-                android:layout_height="0dp">
+
 
                 <ImageView
-                    android:src="@drawable/mettingstwo"
-                    android:layout_weight="1"
+                    android:id="@+id/pthree"
+                    android:layout_below="@+id/ptwo"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
                     android:scaleType="centerCrop"
-                    android:layout_marginRight="2dp"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"/>
-
-                <ImageView
-                    android:src="@drawable/mettingsthree"
-                    android:layout_weight="1"
-                    android:scaleType="centerCrop"
-                    android:layout_marginLeft="2dp"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"/>
-
-
-            </LinearLayout>
+                    android:src="@drawable/sssss"
+                    android:visibility="gone"
+                    android:layout_height="150dp">
+                </ImageView>
 
 
 
 
-
-        </LinearLayout>
 
 
         <TextView
-            android:layout_below="@+id/OneI"
+
+            android:layout_below="@+id/pthree"
             android:id="@+id/MConrnercafeID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,6 +91,9 @@
             android:textSize="15dp" />
 
 
+            </RelativeLayout>
+
+        </ScrollView>
 
     </RelativeLayout>
 

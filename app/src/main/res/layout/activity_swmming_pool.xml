@@ -7,78 +7,61 @@
     tools:context=".SwmmingPoolActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:background="@color/colorPrimary"
-        app:titleTextColor="@android:color/white"
         android:id="@+id/SwmmingToolbarID"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white">
 
     </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
-        android:layout_below="@id/SwmmingToolbarID"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/SwmmingToolbarID">
 
-        <LinearLayout
-            android:id="@+id/OneI"
-            android:orientation="vertical"
-            android:weightSum="2"
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_weight="1"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
-
-                <ImageView
-                    android:src="@drawable/swmpoolone"
-                    android:scaleType="centerCrop"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </ImageView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:weightSum="2"
-                android:layout_width="match_parent"
-                android:layout_marginTop="5dp"
-                android:layout_height="0dp">
-
-                <ImageView
-                    android:src="@drawable/swmpooltwo"
-                    android:layout_weight="1"
-                    android:scaleType="centerCrop"
-                    android:layout_marginRight="2dp"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"/>
-
-                <ImageView
-                    android:src="@drawable/swmpoolthree"
-                    android:layout_weight="1"
-                    android:scaleType="centerCrop"
-                    android:layout_marginLeft="2dp"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"/>
-
-
-            </LinearLayout>
+                android:layout_height="wrap_content">
 
 
 
+        <ImageView
+            android:id="@+id/onep"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/swmpoolone"></ImageView>
 
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/twop"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/onep"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/swmpooltwo"></ImageView>
+
+        <ImageView
+            android:id="@+id/picthree"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/twop"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/swmpoolthree"></ImageView>
 
 
         <TextView
             android:id="@+id/SConrnercafeID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/OneI"
+            android:layout_below="@+id/picthree"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:text="Swimming Pool"
@@ -91,12 +74,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/SConrnercafeID"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:text="@string/fitnesstext"
             android:textSize="15dp" />
 
+            </RelativeLayout>
+
+        </ScrollView>
     </RelativeLayout>
 
 </RelativeLayout>

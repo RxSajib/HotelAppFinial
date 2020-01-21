@@ -4,8 +4,9 @@
     android:layout_height="100dp">
 
     <ImageView
-        android:src="@drawable/appicon"
+        android:src="@drawable/logo"
         android:layout_width="70dp"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
         android:layout_height="70dp">

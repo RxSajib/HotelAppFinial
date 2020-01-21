@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,95 +8,86 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/FitnessToolbarID"
-        app:titleTextColor="@android:color/white"
-        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white">
 
     </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
-        android:layout_below="@id/FitnessToolbarID"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/FitnessToolbarID">
 
 
-        <LinearLayout
-            android:id="@+id/OneI"
-            android:orientation="vertical"
-            android:weightSum="2"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_weight="1"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
+                android:layout_height="wrap_content">
+
 
                 <ImageView
-                    android:src="@drawable/gymone"
-                    android:scaleType="centerCrop"
+                    android:id="@+id/aone"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gymone">
 
                 </ImageView>
 
-            </LinearLayout>
+                <ImageView
+                    android:id="@+id/atwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/aone"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gymtwo">
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:weightSum="2"
-                android:layout_width="match_parent"
-                android:layout_marginTop="5dp"
-                android:layout_height="0dp">
+                </ImageView>
+
 
                 <ImageView
-                    android:src="@drawable/gymtwo"
-                    android:layout_weight="1"
+                    android:id="@+id/athree"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/atwo"
+                    android:layout_marginTop="7dp"
                     android:scaleType="centerCrop"
-                    android:layout_marginRight="2dp"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"/>
+                    android:src="@drawable/gymthree">
 
-                <ImageView
-                    android:src="@drawable/gymthree"
-                    android:layout_weight="1"
-                    android:scaleType="centerCrop"
-                    android:layout_marginLeft="2dp"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"/>
+                </ImageView>
 
+                <TextView
+                    android:id="@+id/ConrnercafeID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/athree"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="GYM,FITNESS CENTER"
+                    android:textColor="#FF5722"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/ConnertextID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ConrnercafeID"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/fitnesstext"
+                    android:textSize="15dp" />
 
+            </RelativeLayout>
 
-
-
-
-        </LinearLayout>
-        <TextView
-            android:layout_below="@+id/OneI"
-            android:id="@+id/ConrnercafeID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="GYM,FITNESS CENTER"
-            android:textColor="#FF5722"
-            android:layout_marginLeft="10dp"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/ConnertextID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ConrnercafeID"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="@string/fitnesstext"
-            android:textSize="15dp" />
-
+        </ScrollView>
     </RelativeLayout>
 
 </RelativeLayout>

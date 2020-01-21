@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,96 +9,86 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/ExcID"
-        app:titleTextColor="@android:color/white"
-        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white">
 
     </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
-        android:layout_below="@+id/ExcID"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ExcID">
 
 
-        <LinearLayout
-            android:id="@+id/OneIT"
-            android:orientation="vertical"
-            android:weightSum="2"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_weight="1"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp">
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:src="@drawable/exone"
-                    android:scaleType="centerCrop"
+                    android:id="@+id/aone"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rrone">
 
                 </ImageView>
 
-            </LinearLayout>
+                <ImageView
+                    android:id="@+id/atwo"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/aone"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ttwo">
 
-            <LinearLayout
-                android:layout_weight="1"
-                android:weightSum="2"
-                android:layout_width="match_parent"
-                android:layout_marginTop="5dp"
-                android:layout_height="0dp">
+                </ImageView>
 
                 <ImageView
-                    android:src="@drawable/extwo"
-                    android:layout_weight="1"
+                    android:id="@+id/athree"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/atwo"
                     android:scaleType="centerCrop"
-                    android:layout_marginRight="2dp"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"/>
+                    android:src="@drawable/asdsdfsdf">
+                </ImageView>
 
-                <ImageView
-                    android:src="@drawable/exthree"
-                    android:layout_weight="1"
-                    android:scaleType="centerCrop"
-                    android:layout_marginLeft="2dp"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"/>
-
-
-            </LinearLayout>
-
-
-
-        </LinearLayout>
 
 
         <TextView
-            android:layout_below="@+id/OneIT"
             android:id="@+id/ss"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/athree"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:text="The Executive Lounge"
             android:textColor="#FF5722"
-            android:layout_marginLeft="10dp"
             android:textSize="18dp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/ExID"
-            android:layout_marginTop="10dp"
-            android:textSize="15dp"
-            android:text="@string/excluse_text"
-            android:layout_below="@id/ss"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_below="@id/ss"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/excluse_text"
+            android:textSize="15dp"
 
             />
+            </RelativeLayout>
+        </ScrollView>
+
 
     </RelativeLayout>
 
