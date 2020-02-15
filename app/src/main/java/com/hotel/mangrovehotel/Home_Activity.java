@@ -133,7 +133,13 @@ public class Home_Activity extends AppCompatActivity {
                     String shareMessage = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
 
                     String sharebody = shareMessage;
-                    String sharesubject = "Hi mangrove hotel provide beast services for you" + "\n\n" + sharebody + "\n";
+                    String sharesubject = "WELCOME\n" +
+                            "TO\n" +
+                            "MANGROVE HOTEL\n" +
+                            "Ras Al Khaimah\n" +
+                            "\n" +
+                            "TOP LOCATION, EVENT LOCATION, RELAXATION\n" +
+                            "Download The link below" + "\n\n" + sharebody + "\n";
                     intent.putExtra(Intent.EXTRA_TEXT, sharesubject);
                     //  intent.putExtra(Intent.EXTRA_SUBJECT, sharebody);
                     startActivity(Intent.createChooser(intent, "share with"));

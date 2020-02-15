@@ -14,84 +14,84 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FitnessActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".SwmmingPoolActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".MetingActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ServicesMangroveID" android:screenOrientation="portrait"/>
+        <activity android:name="com.hotel.mangrovehotel.FitnessActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.hotel.mangrovehotel.SwmmingPoolActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hotel.mangrovehotel.MetingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hotel.mangrovehotel.ServicesMangroveID" android:screenOrientation="portrait"/>
         <activity
-            android:name=".LaveSpaActivity"
+            android:name="com.hotel.mangrovehotel.LaveSpaActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ResetPasswordActivity"
+            android:name="com.hotel.mangrovehotel.ResetPasswordActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".exceutiveLaungue"
+            android:name="com.hotel.mangrovehotel.exceutiveLaungue"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".BestDeals"
+            android:name="com.hotel.mangrovehotel.BestDeals"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AdminHomeActivity"
+            android:name="com.hotel.mangrovehotel.AdminHomeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Admin_LoginActivity"
+            android:name="com.hotel.mangrovehotel.Admin_LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HelpLineActivity"
+            android:name="com.hotel.mangrovehotel.HelpLineActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MangroveCash_Booknow_Activity"
+            android:name="com.hotel.mangrovehotel.MangroveCash_Booknow_Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MangroveCash"
+            android:name="com.hotel.mangrovehotel.MangroveCash"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TConditionActivity"
+            android:name="com.hotel.mangrovehotel.TConditionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Feedback_Activity"
+            android:name="com.hotel.mangrovehotel.Feedback_Activity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".TramsAncConditions"
+            android:name="com.hotel.mangrovehotel.TramsAncConditions"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ProfileActivity"
+            android:name="com.hotel.mangrovehotel.ProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Home_Activity"
+            android:name="com.hotel.mangrovehotel.Home_Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.hotel.mangrovehotel.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Regastation_Activity"
+            android:name="com.hotel.mangrovehotel.Regastation_Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".OliviaActivity"
+            android:name="com.hotel.mangrovehotel.OliviaActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".HukalangActivity"
+            android:name="com.hotel.mangrovehotel.HukalangActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SevenSessionActivity"
+            android:name="com.hotel.mangrovehotel.SevenSessionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MangobarActivity"
+            android:name="com.hotel.mangrovehotel.MangobarActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".CornerCafeActivity"
+            android:name="com.hotel.mangrovehotel.CornerCafeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".BookNowLoginActivity"
+            android:name="com.hotel.mangrovehotel.BookNowLoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Landing_Activity"
+            android:name="com.hotel.mangrovehotel.Landing_Activity"
             android:screenOrientation="portrait" />
 
 
 
         <activity
-            android:name=".WelcomeActivity"
+            android:name="com.hotel.mangrovehotel.WelcomeActivity"
             android:screenOrientation="portrait">
 
             <intent-filter>

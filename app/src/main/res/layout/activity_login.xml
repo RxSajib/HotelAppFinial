@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="@drawable/hotel">
+    android:background="@android:color/white"
+    >
 
 
     <RelativeLayout
@@ -44,12 +45,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="25dp"
-            android:background="@drawable/edit_text_design"
+            android:background="@drawable/edittext_design"
             android:hint="Enter Email"
             android:inputType="textEmailAddress"
             android:padding="10dp"
             android:textColor="@android:color/black"
-            android:textColorHint="#CECECE"
+            android:textColorHint="#000"
             android:textSize="17dp" />
 
         <EditText
@@ -60,12 +61,12 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
-            android:background="@drawable/edit_text_design"
+            android:background="@drawable/edittext_design"
             android:hint="Enter Password"
             android:inputType="textPassword"
             android:padding="10dp"
             android:textColor="@android:color/black"
-            android:textColorHint="#CECECE"
+            android:textColorHint="#000"
             android:textSize="17dp" />
 
         <TextView
@@ -77,7 +78,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:text="Forgot My Password?"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textSize="12dp" />
 
 
@@ -123,7 +124,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
                 android:layout_toRightOf="@+id/viewtextID"
-                android:background="@android:color/white" />
+                android:background="@android:color/black" />
 
             <View
                 android:layout_width="match_parent"
@@ -131,7 +132,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginRight="10dp"
                 android:layout_toLeftOf="@+id/viewtextID"
-                android:background="@android:color/white" />
+                android:background="@android:color/black" />
 
             <TextView
                 android:id="@+id/viewtextID"
@@ -140,7 +141,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:text="OR"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="20dp" />
 
         </RelativeLayout>

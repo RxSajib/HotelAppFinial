@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "60723720223",
-    "firebase_url": "https://mangrovehotel-d9f2a.firebaseio.com",
-    "project_id": "mangrovehotel-d9f2a",
-    "storage_bucket": "mangrovehotel-d9f2a.appspot.com"
+    "project_number": "394843404704",
+    "firebase_url": "https://mangrovehotel-26264.firebaseio.com",
+    "project_id": "mangrovehotel-26264",
+    "storage_bucket": "mangrovehotel-26264.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:60723720223:android:521c526f2dd40b6d25652a",
+        "mobilesdk_app_id": "1:394843404704:android:8a6cae1d1efc78b0c0ccc5",
         "android_client_info": {
           "package_name": "com.hotel.mangrovehotel"
         }
       },
       "oauth_client": [
         {
-          "client_id": "60723720223-5em7h325jbigjgctdh5lergbver8k1h4.apps.googleusercontent.com",
+          "client_id": "394843404704-hm3q0e35b0gto05ltmj873i7dohsn5an.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.hotel.mangrovehotel",
-            "certificate_hash": "834dfb101414beaee3220dc8507b542587d606c1"
+            "package_name": "com.mangrovehotel.mangrovehotel",
+            "certificate_hash": "7f07b5ce768e713959e96cb612fb4ce714a032dd"
           }
         },
         {
-          "client_id": "60723720223-6kp6hkbmue64sj5alca8mpol9su4o6bl.apps.googleusercontent.com",
+          "client_id": "394843404704-t1ibdlmuclpvksl5ti16uk5d2rc6kdp4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAvtmScXkupY9neOGPMy3dj_3YQCzmLb58"
+          "current_key": "AIzaSyA5EV5Y6RKZwgUS3Ktrcvgk6GvXQcioIo8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "60723720223-6kp6hkbmue64sj5alca8mpol9su4o6bl.apps.googleusercontent.com",
+              "client_id": "394843404704-t1ibdlmuclpvksl5ti16uk5d2rc6kdp4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
