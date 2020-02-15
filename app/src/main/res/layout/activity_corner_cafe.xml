@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".CornerCafeActivity">
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/CornerCafeToolbarID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         app:titleTextColor="@android:color/white">
-
     </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout

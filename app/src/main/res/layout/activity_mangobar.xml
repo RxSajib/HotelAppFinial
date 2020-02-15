@@ -59,8 +59,7 @@
                     android:layout_height="150dp"
                     android:layout_below="@+id/sstwo"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/mangobarthird">
-
+                    android:src="@drawable/ff">
                 </ImageView>
 
 
@@ -71,7 +70,7 @@
                     android:layout_below="@+id/ssthree"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="20dp"
-                    android:text="MANGO LOUNGE"
+                    android:text="MANGO BAR"
                     android:textColor="#FF5722"
                     android:textSize="18dp"
                     android:textStyle="bold" />

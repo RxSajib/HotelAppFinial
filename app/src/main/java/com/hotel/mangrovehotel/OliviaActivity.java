@@ -30,7 +30,7 @@ public class OliviaActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
-        getSupportActionBar().setTitle("THE HOOKAH LOUNGE");
+        getSupportActionBar().setTitle("OLIVIA RESTAURANT");
     }
 
     @Override

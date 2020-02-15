@@ -29,7 +29,7 @@ public class MangobarActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
-        getSupportActionBar().setTitle("MANGO LOUNGE");
+        getSupportActionBar().setTitle("MANGO BAR");
     }
 
     @Override
