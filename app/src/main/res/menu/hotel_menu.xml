@@ -61,10 +61,8 @@
         android:id="@+id/TramsConditionID"
         android:icon="@drawable/condition"
         android:title="Terms &amp; Condition"></item>
-    <item
-        android:id="@+id/FeedbackID"
-        android:icon="@drawable/feedback"
-        android:title="Feedback"></item>
+
+
 
     <item
         android:id="@+id/HelpID"

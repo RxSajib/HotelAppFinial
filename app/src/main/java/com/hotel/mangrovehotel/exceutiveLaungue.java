@@ -25,7 +25,7 @@ public class exceutiveLaungue extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
-        getSupportActionBar().setTitle("Exceutive Longue");
+        getSupportActionBar().setTitle("Exceutive Lounge ");
 
         textView = findViewById(R.id.ExID);
         animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.frombutton);

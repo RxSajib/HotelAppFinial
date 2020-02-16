@@ -32,10 +32,7 @@
         android:id="@+id/LTramsConditionID"
         android:icon="@drawable/condition"
         android:title="Terms &amp; Condition"></item>
-    <item
-        android:id="@+id/LFeedbackID"
-        android:icon="@drawable/feedback"
-        android:title="Feedback"></item>
+
 
     <item
         android:id="@+id/LHelpID"

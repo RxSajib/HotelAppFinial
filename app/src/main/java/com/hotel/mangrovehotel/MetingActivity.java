@@ -26,7 +26,7 @@ public class MetingActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
-        getSupportActionBar().setTitle("Mettings and events");
+        getSupportActionBar().setTitle("Event and Meeting");
 
         textViewone = findViewById(R.id.MConrnercafeID);
         textViewtwo = findViewById(R.id.MConnertextID);

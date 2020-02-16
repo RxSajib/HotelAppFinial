@@ -29,7 +29,7 @@ public class LaveSpaActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
-        getSupportActionBar().setTitle("Lavie Spa");
+        getSupportActionBar().setTitle("La Vie SPA");
     }
 
     @Override

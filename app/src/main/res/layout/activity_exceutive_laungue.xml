@@ -69,7 +69,7 @@
             android:layout_below="@+id/athree"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:text="The Executive Lounge"
+            android:text="The Executive Lounge "
             android:textColor="#FF5722"
             android:textSize="18dp"
             android:textStyle="bold" />

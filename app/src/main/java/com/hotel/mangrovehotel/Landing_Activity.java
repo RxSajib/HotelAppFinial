@@ -93,13 +93,7 @@ public class Landing_Activity extends AppCompatActivity {
                     drawerLayout.closeDrawer(Gravity.LEFT);
                 }
 
-                if (menuItem.getItemId() == R.id.LFeedbackID) {
-                    menuItem.setCheckable(true);
-                    menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.LEFT);
-                    Toast.makeText(getApplicationContext(), "First complected login process", Toast.LENGTH_LONG).show();
 
-                }
 
                 if (menuItem.getItemId() == R.id.LBestDealsID) {
                     menuItem.setCheckable(true);

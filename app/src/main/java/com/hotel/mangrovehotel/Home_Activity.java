@@ -104,14 +104,7 @@ public class Home_Activity extends AppCompatActivity {
                     startActivity(intent);
                 }
 
-                if (menuItem.getItemId() == R.id.FeedbackID) {
-                    menuItem.setCheckable(true);
-                    menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.LEFT);
-                    Intent intent = new Intent(getApplicationContext(), Feedback_Activity.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(intent);
-                }
+
 
                 if (menuItem.getItemId() == R.id.TramsConditionID) {
                     menuItem.setCheckable(true);

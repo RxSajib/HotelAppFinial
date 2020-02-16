@@ -153,7 +153,7 @@
                     android:textColor="#FF5722"
                     android:textSize="18dp"
                     android:textStyle="bold"
-                    android:text="Lavie Spa"
+                    android:text="La Vie SPA"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                 </TextView>
