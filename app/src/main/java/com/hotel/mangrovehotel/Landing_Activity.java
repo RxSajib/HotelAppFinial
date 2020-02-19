@@ -24,6 +24,7 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.tapadoo.alerter.Alerter;
 
 public class Landing_Activity extends AppCompatActivity {
 
@@ -87,10 +88,17 @@ public class Landing_Activity extends AppCompatActivity {
                 }
 
                 if (menuItem.getItemId() == R.id.LMangroveCashID) {
-                    Toast.makeText(getApplicationContext(), "First complected login process", Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), "First complected login process", Toast.LENGTH_LONG).show();
                     menuItem.setCheckable(true);
                     menuItem.setChecked(true);
                     drawerLayout.closeDrawer(Gravity.LEFT);
+
+
+                    Alerter.create(Landing_Activity.this)
+                            .setBackgroundColor(R.color.colorPrimary)
+                            .setTitle("Info")
+                            .setText("First complected login process")
+                            .show();
                 }
 
 
@@ -141,13 +149,10 @@ public class Landing_Activity extends AppCompatActivity {
                     String shareMessage = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
 
                     String sharebody = shareMessage;
-                    String sharesubject = "WELCOME\n" +
-                            "TO\n" +
-                            "MANGROVE HOTEL\n" +
-                            "Ras Al Khaimah\n" +
-                            "\n" +
-                            "TOP LOCATION, EVENT LOCATION, RELAXATION\n" +"\n"+
-                            "Download The link below" + "\n\n" + sharebody + "\n";
+                    String sharesubject = "WELCOME TO\n"+
+                            "MANGROVE HOTEL RAK\n"+
+                            "TOP LOCATION\nEVENT LOCATION\nRELAXATION\n" +
+                            "Download The link below" + "\n\n" + sharebody + "";
                     intent.putExtra(Intent.EXTRA_TEXT, sharesubject);
                     //  intent.putExtra(Intent.EXTRA_SUBJECT, sharebody);
                     startActivity(Intent.createChooser(intent, "share with"));

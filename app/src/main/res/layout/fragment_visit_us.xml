@@ -92,7 +92,8 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Enjoy your 10% off your stay"
+                                        android:text="Enjoy 10% off
+                                       \non your stay"
                                         android:textColor="@android:color/white"
                                         android:textSize="27dp" />
 
@@ -245,7 +246,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Be Our Guest Get The FREE LUNCH"
+                                        android:text="Be Our Guest Get \nThe FREE LUNCH"
                                         android:textColor="@android:color/white"
                                         android:textSize="22dp" />
 
@@ -393,7 +394,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Collect 9 Nights Get \nA Reward Night"
+                                        android:text="Book 9 Nights \nGet Reward Night"
                                         android:textColor="@android:color/white"
                                         android:textSize="22dp" />
 

@@ -132,26 +132,16 @@ public class Home_Activity extends AppCompatActivity {
                     String shareMessage = "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
 
                     String sharebody = shareMessage;
-                    String sharesubject = "WELCOME\n" +
-                            "TO\n" +
-                            "MANGROVE HOTEL\n" +
-                            "Ras Al Khaimah\n" +
-                            "\n" +
-                            "TOP LOCATION, EVENT LOCATION, RELAXATION\n" +
-                            "Download The link below" + "\n\n" + sharebody + "\n";
+                    String sharesubject = "WELCOME TO\n"+
+                            "MANGROVE HOTEL RAK\n"+
+                            "TOP LOCATION\nEVENT LOCATION\nRELAXATION\n" +
+                            "Download The link below" + "\n\n" + sharebody + "";
                     intent.putExtra(Intent.EXTRA_TEXT, sharesubject);
                     //  intent.putExtra(Intent.EXTRA_SUBJECT, sharebody);
                     startActivity(Intent.createChooser(intent, "share with"));
                 }
 
-                if (menuItem.getItemId() == R.id.MangroveCashID) {
-                    Intent intent = new Intent(getApplicationContext(), MangroveCash.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(intent);
-                    menuItem.setCheckable(true);
-                    menuItem.setChecked(true);
-                    drawerLayout.closeDrawer(Gravity.LEFT);
-                }
+
 
 
                 if (menuItem.getItemId() == R.id.LogoutID) {

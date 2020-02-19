@@ -21,11 +21,6 @@
         android:title="OFFER"></item>
 
 
-    <item
-        android:id="@+id/MangroveCashID"
-        android:icon="@drawable/dollar"
-        android:title="Mangrove Rewards">
-    </item>
 
 
     <item

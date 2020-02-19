@@ -61,7 +61,11 @@ public class HelpLineActivity extends AppCompatActivity {
         tweeter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "coming soon", Toast.LENGTH_LONG).show();
+              /* Intent intent = new Intent();
+               intent.setAction(Intent.ACTION_VIEW);
+               intent.addCategory(Intent.CATEGORY_BROWSABLE);
+*/
+
 
             }
         });

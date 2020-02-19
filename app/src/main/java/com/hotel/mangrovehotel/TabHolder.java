@@ -39,7 +39,7 @@ class TabHolder extends FragmentPagerAdapter {
         switch (position) {
 
             case 0:
-                return "Visit Us";
+                return "Home";
 
             case 1:
                 return "Booking";
