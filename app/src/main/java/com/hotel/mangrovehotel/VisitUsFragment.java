@@ -57,8 +57,9 @@ public class VisitUsFragment extends Fragment {
                            if(dataSnapshot.hasChild("username")){
                                String usernameget = dataSnapshot.child("username").getValue().toString();
 
-                            one.setText(usernameget);
-                            two.setText(usernameget);
+                            one.setText(usernameget+" 10%0FF");
+                            two.setText(usernameget+" ");
+
                            }
                        }
                        else {
