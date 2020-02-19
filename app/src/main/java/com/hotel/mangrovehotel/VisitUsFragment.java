@@ -58,7 +58,7 @@ public class VisitUsFragment extends Fragment {
                                String usernameget = dataSnapshot.child("username").getValue().toString();
 
                             one.setText(usernameget+" 10%0FF");
-                            two.setText(usernameget+" ");
+                            two.setText(usernameget+" FREELUNCH");
 
                            }
                        }

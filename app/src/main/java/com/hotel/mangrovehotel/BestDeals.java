@@ -59,7 +59,7 @@ public class BestDeals extends AppCompatActivity {
 
         FirebaseRecyclerAdapter<PostHolder, PostViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<PostHolder, PostViewHolder>(
                 PostHolder.class,
-                R.layout.post_banner,
+                R.layout.offer_design,
                 PostViewHolder.class,
                 Mpostdatabase
         ) {
@@ -74,14 +74,12 @@ public class BestDeals extends AppCompatActivity {
                         if (dataSnapshot.exists()) {
 
 
-                            if (dataSnapshot.hasChild("current_date")) {
+                            if (dataSnapshot.hasChild("current_date") || dataSnapshot.hasChild("current_time")) {
                                 String current_dateget = dataSnapshot.child("current_date").getValue().toString();
-                                postViewholder.setdateSet(current_dateget);
-                            }
-                            if (dataSnapshot.hasChild("current_time")) {
                                 String current_timeget = dataSnapshot.child("current_time").getValue().toString();
-                                postViewholder.setTmSet(current_timeget);
+                                postViewholder.setdate_time(current_timeget+" | "+current_dateget);
                             }
+
                             if (dataSnapshot.hasChild("image")) {
                                 String imageget = dataSnapshot.child("image").getValue().toString();
                                 postViewholder.setImage(imageget);
@@ -133,30 +131,24 @@ public class BestDeals extends AppCompatActivity {
 
     static public class PostViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView time, date;
         private View Mview;
         private TextView url;
         private ImageView postimage;
         private Context context;
+        private TextView time_date;
 
         public PostViewHolder(@NonNull View itemView) {
             super(itemView);
 
             Mview = itemView;
-            time = Mview.findViewById(R.id.PostBannerTimeID);
-            date = Mview.findViewById(R.id.PostBannerDatIeD);
-            url = Mview.findViewById(R.id.PostUrlID);
-            postimage = Mview.findViewById(R.id.PostBannerImageID);
+
+            url = Mview.findViewById(R.id.OnlineUrlID);
+            postimage = Mview.findViewById(R.id.ToDayOfferImageID);
             context = Mview.getContext();
+            time_date = Mview.findViewById(R.id.Timage_DateID);
         }
 
-        public void setTmSet(String tim) {
-            time.setText(tim);
-        }
 
-        public void setdateSet(String dat) {
-            date.setText(dat);
-        }
 
         public void seturlset(String ur) {
             url.setText(ur);
@@ -164,6 +156,10 @@ public class BestDeals extends AppCompatActivity {
 
         public void setImage(String img) {
             Picasso.with(context).load(img).placeholder(R.drawable.defaultgalleryimage).into(postimage);
+        }
+
+        public void setdate_time(String time){
+            time_date.setText(time);
         }
     }
 

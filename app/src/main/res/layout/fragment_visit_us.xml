@@ -105,8 +105,9 @@
 
                                     <ImageView
                                         android:layout_width="match_parent"
+                                        android:padding="5dp"
                                         android:layout_height="match_parent"
-                                        android:src="@drawable/discountone">
+                                        android:src="@drawable/officon">
 
 
                                     </ImageView>
@@ -243,7 +244,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_marginLeft="10dp"
-                                        android:text="Free Launc"
+                                        android:text="Be Our Guest Get The FREE LUNCH"
                                         android:textColor="@android:color/white"
                                         android:textSize="22dp" />
 
@@ -257,8 +258,9 @@
 
                                     <ImageView
                                         android:layout_width="match_parent"
+                                        android:padding="5dp"
                                         android:layout_height="match_parent"
-                                        android:src="@drawable/coion">
+                                        android:src="@drawable/food">
 
 
                                     </ImageView>
@@ -404,6 +406,7 @@
 
                                     <ImageView
                                         android:layout_width="match_parent"
+                                        android:padding="5dp"
                                         android:layout_height="match_parent"
                                         android:src="@drawable/sunnicon">
 

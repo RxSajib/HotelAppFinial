@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.shape.MaterialShapeDrawable;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -65,6 +66,11 @@ public class Home_Activity extends AppCompatActivity {
         tabHolder = new TabHolder(getSupportFragmentManager());
         viewPager.setAdapter(tabHolder);
         tabLayout.setupWithViewPager(viewPager);
+
+
+
+
+
 
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
