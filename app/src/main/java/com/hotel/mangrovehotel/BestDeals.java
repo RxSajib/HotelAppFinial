@@ -43,7 +43,7 @@ public class BestDeals extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
-        getSupportActionBar().setTitle("TODAY Activity");
+        getSupportActionBar().setTitle("OFFER");
         Mpostdatabase = FirebaseDatabase.getInstance().getReference().child("Post");
 
 

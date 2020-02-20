@@ -61,12 +61,11 @@ public class HelpLineActivity extends AppCompatActivity {
         tweeter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              /* Intent intent = new Intent();
+               Intent intent = new Intent();
                intent.setAction(Intent.ACTION_VIEW);
                intent.addCategory(Intent.CATEGORY_BROWSABLE);
-*/
-
-
+               intent.setData(Uri.parse("https://twitter.com/MangrovehotelR"));
+               startActivity(intent);
             }
         });
 
