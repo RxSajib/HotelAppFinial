@@ -24,6 +24,20 @@
         android:layout_below="@id/BeastDealsToolbarID">
 
 
+        <TextView
+            android:id="@+id/NpPostID"
+            android:layout_width="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="No Post Found"
+            android:typeface="serif"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
 
 
         <androidx.recyclerview.widget.RecyclerView

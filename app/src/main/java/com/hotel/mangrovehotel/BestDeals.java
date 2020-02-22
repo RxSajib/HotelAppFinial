@@ -11,6 +11,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Contacts;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -32,10 +33,15 @@ public class BestDeals extends AppCompatActivity {
     private RecyclerView recyclerView;
     private String messageget;
 
+    private TextView nopostmessage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_best_deals);
+
+
+        nopostmessage = findViewById(R.id.NpPostID);
 
 
 
@@ -66,13 +72,14 @@ public class BestDeals extends AppCompatActivity {
 
             protected void populateViewHolder(final PostViewHolder postViewholder, final PostHolder postHolder, int i) {
 
-                String UID = getRef(i).getKey();
+                final String UID = getRef(i).getKey();
                 Mpostdatabase.child(UID).addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
 
                         if (dataSnapshot.exists()) {
 
+                            nopostmessage.setVisibility(View.INVISIBLE);
 
                             if (dataSnapshot.hasChild("current_date") || dataSnapshot.hasChild("current_time")) {
                                 String current_dateget = dataSnapshot.child("current_date").getValue().toString();
@@ -87,21 +94,61 @@ public class BestDeals extends AppCompatActivity {
                             if (dataSnapshot.hasChild("message")) {
                                 messageget = dataSnapshot.child("message").getValue().toString();
                                 postViewholder.seturlset(messageget);
+
                             }
 
                             postViewholder.Mview.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
+
+                                    Mpostdatabase.child(UID).addValueEventListener(new ValueEventListener() {
+                                        @Override
+                                        public void onDataChange(DataSnapshot dataSnapshot) {
+                                            if(dataSnapshot.exists()){
+                                                if(dataSnapshot.hasChild("message")){
+                                                    String messageget = dataSnapshot.child("message").getValue().toString();
+
+                                                    try {
+                                                        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://" + messageget));
+                                                        startActivity(myIntent);
+
+                                                    }catch (ActivityNotFoundException e){
+                                                        Toast.makeText(BestDeals.this, "No application can handle this request." + " Please install a webbrowser", Toast.LENGTH_LONG).show();
+                                                        e.printStackTrace();
+                                                    }
+                                                }
+                                            }
+                                            else {
+                                                Toast.makeText(getApplicationContext(), "No Url Found", Toast.LENGTH_LONG).show();
+
+                                            }
+                                        }
+
+                                        @Override
+                                        public void onCancelled(DatabaseError databaseError) {
+
+                                        }
+                                    });
+
+                                }
+                            });
+
+                            /*postViewholder.Mview.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
                                     try {
-                                        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(messageget));
+                                        Toast.makeText(getApplicationContext(), messageget, Toast.LENGTH_LONG).show();
+
+                                        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://" + messageget));
                                         startActivity(myIntent);
                                     } catch (ActivityNotFoundException e) {
                                         Toast.makeText(BestDeals.this, "No application can handle this request." + " Please install a webbrowser", Toast.LENGTH_LONG).show();
                                         e.printStackTrace();
                                     }
                                 }
-                            });
+                            });*/
                         } else {
+                            nopostmessage.setVisibility(View.VISIBLE);
                             Toast.makeText(getApplicationContext(), "no data found", Toast.LENGTH_LONG).show();
                         }
                     }
