@@ -9,7 +9,18 @@
     android:background="@android:color/white">
 
 
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/AdminLoginToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
     <TextView
+        android:layout_below="@+id/AdminLoginToolbarID"
         android:id="@+id/admintext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

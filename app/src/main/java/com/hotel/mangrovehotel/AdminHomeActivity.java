@@ -8,6 +8,8 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -115,8 +117,13 @@ public class AdminHomeActivity extends AppCompatActivity {
 
                                     if (task.isSuccessful()) {
 
-                                        Mprogress.dismiss();
+                                        Mprogress.dismiss();;
                                         Toast.makeText(getApplicationContext(), "upload success", Toast.LENGTH_LONG).show();
+
+                                        Intent intent = new Intent(getApplicationContext(), Home_Activity.class);
+                                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                        startActivity(intent);
+
                                     } else {
                                         String error = task.getException().getMessage().toString();
                                         Toast.makeText(getApplicationContext(), error, Toast.LENGTH_LONG).show();
@@ -140,11 +147,28 @@ public class AdminHomeActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.delate_menu, menu);
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+
+
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
             finish();
+        }
+
+        if(item.getItemId() == R.id.DelateID){
+            Intent intent = new Intent(getApplicationContext(), DelateActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

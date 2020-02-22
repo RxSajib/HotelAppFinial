@@ -1,9 +1,14 @@
 package com.hotel.mangrovehotel;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -21,12 +26,17 @@ public class Admin_LoginActivity extends AppCompatActivity {
     private EditText email, password;
     private Button button;
     private DatabaseReference MAdminDatabase;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin__login);
 
+        toolbar = findViewById(R.id.AdminLoginToolbarID);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.back_icon);
 
         MAdminDatabase = FirebaseDatabase.getInstance().getReference().child("Admin");
         email = findViewById(R.id.AdminEmailAddressID);
@@ -77,8 +87,13 @@ public class Admin_LoginActivity extends AppCompatActivity {
                             Intent intent = new Intent(getApplicationContext(), AdminHomeActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(intent);
+
+                            email.setText("");
+                            password.setText("");
                         }
                     } else {
+                        email.setText("");
+                        password.setText("");
                         Toast.makeText(getApplicationContext(), "your didn't have any email", Toast.LENGTH_LONG).show();
                     }
                 }
@@ -91,5 +106,13 @@ public class Admin_LoginActivity extends AppCompatActivity {
 
         }
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == android.R.id.home){
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

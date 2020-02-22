@@ -57,7 +57,7 @@
                     android:layout_height="150dp"
                     android:layout_below="@+id/atwo"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/asdsdfsdf">
+                    android:visibility="gone">
                 </ImageView>
 
 
